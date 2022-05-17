@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seus dados</title>
+    <link rel="stylesheet" href="css/dados.css">
+</head>
+<body>
+    <header>
+        <h1>Seus dados</h1>
+    </header>
+    <section>
+        <div>
+            <p>Seu nome: <input type="text" name="txtnome" id="txtnome" placeholder="Digite aqui..."></p>
+            <p>Sua idade: <input type="number" name="txtidade" id="txtidade" placeholder="Digite aqui..."></p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>Estado civil:
+                <select name="estc" id="estc">
+                    <option value=""></option>
+                    <option value="Solteiro(a)">Solteiro(a)</option>
+                    <option value="Namorando">Namorando</option>
+                    <option value="Casado(a)">Casado(a)</option>
+                    <option value="Divorciado(a)">Divorciado(a)</option>
+                </select>
+            </p>
+        </div>
+        <input type="button" value="Enviar" onclick="enviar()">
+    </section>
+    <div id="result">
+        <p><strong>Nome: </strong></p>
+        <p><strong>Idade: </strong></p>
+        <p><strong>Gênero: </strong></p>
+        <p><strong>Estado civil: </strong></p>
+    </div>
+    <footer>
+        <p>&copy; Alisson's</p>
+    </footer>
+    <script src="js/dados_script.js"></script>
+</body>
+</html>
